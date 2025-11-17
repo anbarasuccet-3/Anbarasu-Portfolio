@@ -1,0 +1,406 @@
+.contents {
+  display: flex;
+  list-style: none;
+  margin: 10px 50px 0px 50px;
+}
+
+.contents a {
+  color: aqua; /* Aqua for links */
+  margin: 10px;
+  text-decoration: none;  
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 160px;
+  background-color: #000;
+  font-size: 25px;
+  margin: 10px 0px 0px 50px;
+  color: white; /* Logo should be visible on dark background */
+  border: 2px solid aqua;
+  border-radius: 15px;
+}
+
+.part2 {
+  background-color: #000; /* Dark background (removed background image) */
+  color: white;
+  padding: 2rem;
+}
+
+.divi1 h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 50px;
+  color: aqua; /* Headline in aqua */
+}
+
+.divi2 h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: #f1f1f1; /* Light text for readability */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.buttons {
+  height: 40px;
+  width: 100px;
+  display: flex;            
+  gap: 15px;                
+  justify-content: center; 
+  margin: 50px 0px 50px 600px;
+}
+
+.buttons .button {
+  background-color: aqua;  
+  color: black; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.buttons .button:hover {
+  background-color: #00cccc;
+  transform: scale(1.05);
+}
+
+.img img {
+  height: 400px;
+  width: 400px;
+  margin: 200px 100px 50px 80px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.6);
+}
+
+.content1 h1 {
+  color: aqua;
+  margin: 100px 50px 10px 50px;
+}
+
+.content1 h3 {
+  color: #ddd;
+  height: 500px;
+  width: 600px;
+  margin: 100px 200px 100px 100px;
+}
+
+.part3 {
+  display: flex;
+}
+
+.ski {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.skills {
+  font-size: 2.5rem;
+  color: aqua;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Scrollable skills box */
+.box {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 20px;
+  cursor: grab;
+  animation: fadeInSlideUp 1s ease-out;
+  scrollbar-width: none;
+}
+
+.box::-webkit-scrollbar {
+  display: none; 
+}
+
+
+.box.active {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.html, .css, .js, .python {
+  flex: 0 0 auto;
+  height: 400px;
+  width: 350px;
+  background-color: #111;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: cardAppear 0.8s ease forwards;
+}
+
+.html img, .css img, .js img, .python img {
+  height: 200px;
+  width: 250px;
+  margin: 30px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.html h3, .css h3, .js h3, .python h3 {
+  margin: 10px;
+  color: aqua;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.html h5, .css h5, .js h5, .python h5 {
+  color: #ddd;
+  margin: 10px 15px 20px 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Hover effects */
+.html:hover, .css:hover, .js:hover, .python:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0px 6px 20px rgba(0, 255, 255, 0.4);
+}
+
+/* Animations */
+@keyframes cardAppear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.aski{
+  margin: 50px;
+  font-size: 2.5rem;
+  color: aqua;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px; 
+}
+
+.lists {
+  margin: 50px;
+  color: white;
+}
+
+.certifications {
+  margin: 50px;
+  color: #00cccc;
+}
+
+.clist {
+  color: white;
+  margin: 50px;
+}
+
+.pjts {
+  color: #00cccc;
+  margin: 50px;
+}
+
+.plists {
+  color: white;
+  margin: 50px 50px 50px 100px;
+}
+
+.con {
+  color: #00cccc;
+  display: flex;
+  justify-content: center;
+}
+
+.contact.fade {
+  margin-top: 300px;
+}
+
+.cdiv {
+  display: flex;
+  justify-content: center;
+  margin: 0px 50px;
+  padding: 50px;
+}
+
+.cbox {
+  height: 600px;
+  width: 600px;
+  background-color: #111;
+  border-radius: 20px;
+}
+
+.cbox input {
+  border-radius: 25px;
+  padding: 5px 160px 5px 160px;
+  margin: 50px 20px 10px 20px;
+}
+
+.content input {
+  padding: 100px 160px;
+  border-radius: 25px;
+}
+
+.buttons2 {
+  height: 40px;
+  width: 100px;
+  display: flex;            
+  gap: 15px;                
+  justify-content: center; 
+  margin: 50px 220px;
+}
+
+.buttons2 button {
+  background-color: aqua;  
+  color: black; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.buttons2 button:hover {
+  background-color: #00cccc;
+  transform: scale(1.05);
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 5.0s ease-out;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.education-section {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.edu-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: aqua;
+}
+
+.edu-sub {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  width: 80%;
+  margin: auto;
+  border-left: 3px solid aqua;
+  padding-left: 40px;
+  position: relative;
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: black;
+  border: 3px solid aqua;
+  border-radius: 50%;
+  position: absolute;
+  left: -48px;
+  top: 20px;
+}
+
+.year {
+  position: absolute;
+  left: -100px;
+  top: 10px;
+  font-size: 20px;
+  color: aqua;
+  font-weight: bold;
+}
+
+.content-box {
+  background: black;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.content-box h3 {
+  margin: 0;
+  font-size: 20px;
+  color: aqua;
+}
+
+.content-box p {
+  margin-top: 6px;
+  font-size: 15px;
+  color: yellow;
+}
+
+.documents h1 {
+  margin: 30px 630px 30px 630px;
+  color: #00cccc;
+}
+
+.documents h3 {
+  color: #00cccc;
+  margin: 40px;
+}
+
+.doc1, .doc2 {
+  margin: 30px;
+  height: 600px;
+  width: 500px;
+  background-color: #000;
+  border-radius: 25px;
+  display: inline-block;
+  vertical-align: top;
+}
